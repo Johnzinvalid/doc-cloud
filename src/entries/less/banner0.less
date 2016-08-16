@@ -1,0 +1,133 @@
+@import 'custom.less';
+
+@banner: banner0;
+.@{banner} {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  background: linear-gradient(90deg, #006284, #1B813E);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &-title {
+    flex: 0.5;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    margin-left: -275px;
+    font-size: 14px;
+    color: @template-text-color-light;
+    width: 550px;
+    & .queue-anim-leaving {
+      position: relative !important;
+      width: auto;
+    }
+    & .logo {
+      width: 250px;
+      padding-left: 30px;
+      margin: auto;
+      display: block;
+    }
+    & h1{
+      margin: 10px auto;
+      font-family: Font-moon;
+      color: #000101;
+    }
+    & p {
+      margin-bottom: 20px;
+      word-wrap: break-word;
+      color: #000101;
+    }
+    & button {
+      border: 1px solid #000101;
+      color: #000101;
+      background: transparent;
+      box-shadow: 0 0 0 transparent;
+      transition: background .45s @ease-out, box-shadow .45s @ease-out;
+      line-height: 25px;
+      font-size: 13px;
+      & span {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        transition: text-shadow .45s @ease-out;
+      }
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+        & span {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+        }
+      }
+    }
+  }
+  &-title1 {
+    flex: 0.5;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    margin-top: 14px;
+    margin-left: 275px;
+    font-size: 14px;
+    color: @template-text-color-light;
+    width: 550px;
+    & .queue-anim-leaving {
+      position: relative !important;
+      width: auto;
+    }
+    & .logo1 {
+      width: 250px;
+      padding-left: 30px;
+      margin: auto;
+      display: block;
+    }
+    & h1{
+      margin: 10px auto;
+      font-family: Font-moon;
+      color: @template-text-color-light;
+    }
+    & p {
+      margin-bottom: 20px;
+      word-wrap: break-word;
+      color: @template-text-color-light;
+    }
+    & button {
+      margin-top: 2px;
+      border: 1px solid @template-text-color-light;
+      color: @template-text-color-light;
+      background: transparent;
+      box-shadow: 0 0 0 transparent;
+      transition: background .45s @ease-out, box-shadow .45s @ease-out;
+      line-height: 25px;
+      font-size: 13px;
+      & span {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        transition: text-shadow .45s @ease-out;
+      }
+      &:hover {
+        color: #000101;
+        border-color: #000101;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+        & span {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+        }
+      }
+    }
+  }
+  &-icon {
+    bottom: 10px;
+    //font-size: 24px;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    color: @template-text-color-light;
+    & svg {
+      transform: rotate(90deg);
+    }
+  }
+}
